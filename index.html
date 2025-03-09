@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Net Salary, Speed Detector, and Grade Generator</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .section { margin-bottom: 40px; }
+    h2 { color: #333; }
+    label { margin-right: 10px; }
+    input { padding: 5px; }
+    button { padding: 8px 15px; margin-top: 10px; }
+    .output { margin-top: 15px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <!-- Net Salary Section -->
+  <div class="section" id="netSalarySection">
+    <h2>Net Salary Calculator</h2>
+    <label for="basicSalary">Enter Basic Salary (KSh):</label>
+    <input type="number" id="basicSalary" />
+    <br />
+    <label for="benefits">Enter Benefits (KSh):</label>
+    <input type="number" id="benefits" />
+    <br />
+    <button onclick="calculateNetSalary()">Calculate Net Salary</button>
+    <div class="output" id="netSalaryOutput"></div>
+  </div>
+
+  <!-- Speed Detector Section -->
+  <div class="section" id="speedDetectorSection">
+    <h2>Speed Detector</h2>
+    <label for="speed">Enter Speed (km/h):</label>
+    <input type="number" id="speed" />
+    <br />
+    <button onclick="checkSpeed()">Check Speed</button>
+    <div class="output" id="speedOutput"></div>
+  </div>
+
+  <!-- Grade Generator Section -->
+  <div class="section" id="gradeSection">
+    <h2>Student Grade Generator</h2>
+    <label for="marks">Enter Marks (0-100):</label>
+    <input type="number" id="marks" />
+    <br />
+    <button onclick="generateGrade()">Generate Grade</button>
+    <div class="output" id="gradeOutput"></div>
+  </div>
+
+  <script src="netSalary.js"></script>
+  <script src="SpeedDetector.js"></script>
+  <script src="getStudentGrade.js"></script>
+</body>
+</html>
